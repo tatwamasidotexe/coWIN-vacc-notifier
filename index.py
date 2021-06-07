@@ -6,9 +6,9 @@ from pygame import mixer
 
 import json
 
-print("blahblahblah testing.")
+print("blahblahblah testing.\n")
 
-age = 55
+age = int(input("Tell us your age bro: "))
 pincodes = ["751013", "751031", "750017", "751016", "751017", "751051"]
 within = 10 # no. of days within which we want a slot
 
@@ -58,6 +58,9 @@ while True :
         print("\nAh. The sweet taste of success.")
         print("Search completed!")
     else :
+        mixer.init()
+        mixer.music.load('mixkit-doorbell-tone-2864.wav')
+        mixer.music.play()
         print("No slots found, sorry :(")
 
     dt = datetime.now() + timedelta(minutes=3)
