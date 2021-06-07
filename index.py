@@ -50,8 +50,6 @@ while True :
                                     print('\n')
 
                                     count+=1
-                else :
-                    print("No response :((")
     
     if count :
         mixer.init()
