@@ -8,9 +8,9 @@ import json
 
 print("blahblahblah testing.\n")
 
-age = int(input("Tell us your age bro: "))
+age = int(input("Tell us your age: "))
 pincodes = ["751013", "751031", "750017", "751016", "751017", "751051"]
-within = 10 # no. of days within which we want a slot
+within = int(input("Within how many days do you want to check availability? ")) # no. of days within which we want a slot
 
 flag = 'y'
 
